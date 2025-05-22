@@ -1,48 +1,107 @@
+/*Class Selector*/
+
+:root {
+    --primary-color: darkblue;
+    --text-linght: white;
+    --heading-color: darkblue;
+    --border-color: black;
+    --shadow-color: gray;
+    --padding-small: 2px;
+    --padding-medium: 10px;
+    --pading-lange:20px;
+    --aside-bg:#eee;
+    --aside-text:#333;
+    --max-width:850px;
+    --footer-border: 1px solid #000;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    margin:1rem;
+    border:1px solid rgb(000/10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color:#000;
+    flex: 1;
+     
+    
+}
+
+aside{
+    width: 20em;
+    text-align: center;
+    position: relative;
+   
+}
+
+aside h2{
+    position: absolute;
+    top: 30px;
+    left:75px;
+}
+
+
 nav{
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--padding-medium);
 }
+
+
 nav a {
-color:white;
+color: var(--text-linght);
 display: block;
-padding: 20px;
+padding: var(--pading-lange);
 }
+
+
 h1{
-    color:darkblue;
+    color: var(--heading-color);
 }
 
 img{
     width: 150px;
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: 1px solid var(--border-color);
+    padding: var(--padding-small);
+    box-shadow: 0 0 30px var(--shadow-color);
+}
+main img {
+    /*your most likely will have other declarations here*/
+    float: right;
 }
 
 p{
     padding: 10px;
 }
+
 main{
-    max-width: 850px;
+    max-width: var(--max-width);
 }
+
 aside{
     width: 20px;
     margin:1px;
     border: 1px solid rgb(0, 0, 0/0.2);
     padding: 1px;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--aside-bg);
+    color: var(--aside-text);
     text-align: center;
 }
+
 aside img {
     width: 200px;
     height: auto;
 }
+
 p{padding: 0;}
 
 footer{
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--footer-border);
     text-align: center;
 }
 
