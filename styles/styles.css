@@ -60,6 +60,7 @@ nav{
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 
@@ -67,6 +68,9 @@ nav a {
 color: var(--text-linght);
 display: block;
 padding: var(--pading-lange);
+text-decoration: none;
+font-size: 1.2rem;
+font-weight: 700;
 }
 
 
@@ -93,6 +97,8 @@ p{
 main{
     max-width: var(--max-width);
     flex: 1;
+    grid-column: 2/3;
+    margin: 1rem;
     
 }
 
@@ -104,6 +110,9 @@ aside{
     background-color: var(--aside-bg);
     color: var(--aside-text);
     text-align: center;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -117,6 +126,18 @@ footer{
     margin-top: 15px;
     border-top: 1px solid var(--footer-border);
     text-align: center;
+}
+
+/*Flex and Grid*/
+
+header, footer{
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid{
+    display:grid;
+    align-items: center;
 }
 
 
